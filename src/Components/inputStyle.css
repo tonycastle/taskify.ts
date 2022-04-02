@@ -1,0 +1,82 @@
+.input {
+  display: flex;
+  width: 70%;
+  position: relative;
+  align-items: center;
+}
+
+.input__box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(216, 208, 223);
+}
+
+.input__submit {
+  display: flex;
+  position: absolute;
+  right: 0;
+  background-color: rgba(152, 0, 172, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 5px;
+  transition: 0.2s all;
+}
+
+.input__box:focus {
+  border: none;
+  outline: none;
+}
+
+.input__submit:hover {
+  background-color: rgba(152, 0, 172, 1);
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+.todoContainer {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+.todos__single {
+  display: flex;
+  width: 40%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: rgba(152, 0, 172, 0.5);
+  position: relative;
+}
+
+.todos__single__icons__container {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+
+.todos__single__icons__container > * {
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.5s all;
+}
+
+.todos__single__icons__container > *:hover {
+  color: #fff;
+}
+
+.todos__single__text {
+}
+
+.todos__single__text__complete {
+  text-decoration: line-through;
+}
